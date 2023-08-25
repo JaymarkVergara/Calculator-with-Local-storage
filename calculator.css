@@ -1,0 +1,70 @@
+
+
+*{
+    margin:  0;
+    padding: 0;
+}
+body{
+    font-family: arial;
+    background-color: rgb(145, 140, 135);
+}
+
+.main-container{
+    width: 310px;
+    background-color: rgb(46, 45, 45);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    display: column;
+    justify-content: center;
+    margin: 4rem auto;
+    border: 4px solid black;
+}
+
+
+
+.display-output{
+    border-radius: 20px;
+    border: 4px solid black;
+    height: 70px;
+    position: relative;
+    color: black;
+    background-color: aliceblue;
+    margin-bottom: 1rem;
+}
+.output{
+    font-size: 40px;
+    text-align: left;
+    letter-spacing: 2px;
+   
+}
+.container{
+    display: flex;  
+}
+
+.number, .operator{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
+    font-size: 24px;
+}
+.number{
+    border: none;
+    background-color: rgb(88, 88, 88);
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+}
+.operator{
+    border: none;
+    background-color: rgb(221, 158, 22);
+    color: white;
+    cursor: pointer; 
+    font-weight: 500;
+}
+
+
+

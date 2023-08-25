@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    
+    <div class="main-container">
+    <div class="display-output">
+        <p class="js-output output"></p>
+    </div>
+
+    <div class="container">
+        <div>
+            <button class="number" onclick="calculate('1')">1</button>
+        </div>
+        <div>
+            <button class="number" onclick="calculate('2')">2</button>
+        </div>
+        <div>
+            <button class="number" onclick="calculate('3')">3</button>
+        </div>
+        <div>
+            <button class="operator" onclick="calculate('+')">+</button>
+        </div>
+    </div>
+    <div class="container">
+        <div>
+            <button class="number" onclick="calculate('4')">4</button>
+        </div>
+        <div>
+            <button class="number" onclick="calculate('5')">5</button>
+        </div>
+        <div>
+            <button class="number" onclick="calculate('6')">6</button>
+        </div>
+        <div>
+            <button class="operator" onclick="calculate('-')">-</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div>
+            <button class="number" onclick="calculate('7')">7</button>
+        </div>
+        <div>
+            <button class="number" onclick="calculate('8')">8</button>
+        </div>
+        <div>
+            <button class="number" onclick="calculate('9')">9</button>
+        </div>
+        <div>
+            <button class="operator" onclick="calculate('*')">*</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div>
+            <button class="number" onclick="calculate('0')">0</button>
+        </div>
+        <div>
+            <button class="number" onclick="calculate('.')">.</button>
+        </div>
+        <div>
+            <button class="number" 
+            onclick="calculation = eval(calculation);
+            showResult(); localStorage.setItem('save',calculation);">=</button>
+        </div>
+        <div>
+            <button class="operator" onclick="calculate('/')">/</button>
+        </div>
+    </div>
+    <div class="container">
+        <div>
+            <button class="number" onclick="calculation = ''; showResult();
+            localStorage.setItem('save', calculation);">Clear</button>
+        </div>
+    </div>
+</div>
+
+
+
+   
+    <script src="calculator.js">
+       
+
+    </script>
+</body>
+</html>
